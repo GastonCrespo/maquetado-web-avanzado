@@ -41,12 +41,23 @@ body{
   background-image: linear-gradient(to left,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
 }
 .fondo-degradado-4{
-  background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
+  background-image: linear-gradient(to left bottom,darkviolet 10%,darkred , darkblue  )
 }
 .fondo-degradado-5{
-  background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
+  background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue )
 }
 .fondo-degradado-6{
   background: crimson; /* fallback */
-  background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
+  background-image: linear-gradient(to left bottom ,rgb(36, 4, 110) ,rgb(122, 2, 2) , darkblue)
+}
+
+.fondo-imagen-1{
+  background-image: 
+    linear-gradient(rgba(335, 0, 83, 0.5), rgba(12, 27, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1771143527938-a0ed2f30f326?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center center;
+}
+.fondo-imagen-2{
+  background-image: url('https://images.unsplash.com/photo-1771143527938-a0ed2f30f326?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center bottom;
 }
