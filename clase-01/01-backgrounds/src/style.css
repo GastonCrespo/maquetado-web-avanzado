@@ -1,0 +1,45 @@
+/*reset*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eee;
+  /* Tipografias seguras -> Garantiza que todos los sitios tengan esa tipografia*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor{
+  max-width: 900px;
+  border: 1px solid crimson;
+  margin: auto;
+}
+.texto-rojo{
+  color: crimson;
+}
+.fondo-base {
+  background-color: blue;
+  width: auto;
+  height: 350px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.fondo-color {
+  background-color: darkorange;
+}
+
+.fondo-degradado{
+    background-image: linear-gradient(darkorange, darkgreen);
+}
+.fondo-degradado-2{
+  background-image: linear-gradient(rgb(36, 4, 110),rgb(122, 2, 2), darkblue);
+}
+.fondo-degradado-3{
+  background-image: linear-gradient(to left,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
+}
+.fondo-degradado-4{
+  background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
+}
