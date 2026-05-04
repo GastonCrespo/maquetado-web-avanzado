@@ -43,3 +43,10 @@ body{
 .fondo-degradado-4{
   background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
 }
+.fondo-degradado-5{
+  background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
+}
+.fondo-degradado-6{
+  background: crimson; /* fallback */
+  background-image: linear-gradient(to left bottom,rgb(36, 4, 110),rgb(122, 2, 2), darkblue)
+}
