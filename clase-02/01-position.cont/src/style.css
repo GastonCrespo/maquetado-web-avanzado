@@ -25,6 +25,7 @@ body {
     height: 600px;
     margin: 40px auto;
      /* Para que los hijos con position absolute se posicionen respecto a este padre */
+     position: relative;
 }
 
 .caja {
@@ -41,4 +42,29 @@ body {
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+}
+
+.static {
+    position: static;
+    background-color: darkblue;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+}
+.relative {
+    position: relative;
+    background-color: darkcyan;
+    left: 10px; /* Left Y Right = X */  
+    top: 10px; /* Top Y Bottom = Y */  
+}
+/* El div con la clase absolute salio de la caja es como nunca lo hubiera hecho en el html */
+/* El elemento que esta con  absolute basicamente se posiciona desde el borde de la pestañaa(viewport) de una forma estatica  */
+/* en este caso el fixed que esta en 4ta posicion toma el lugar del absolutea al moverlo , pasa de 4ta psoicion a 3ra */
+.absolute{
+    position: absolute;
+    background-color: darkmagenta;
+    left: -50px; /* Left Y Right = X */  
+    top: -50px; /* Top Y Bottom = Y */  
+    border-radius: 50%;
 }
