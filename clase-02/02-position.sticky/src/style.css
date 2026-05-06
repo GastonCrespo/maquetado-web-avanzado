@@ -1,0 +1,25 @@
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    /* Tipografía segura -> Todos los SO van a tener alguna de estás tipografías */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+
+.contenedor {
+    max-width: 1100px;
+    border: 1px solid crimson;
+    margin: auto;
+}
+.titulo-articulo {
+    background-color: purple;
+    position: sticky; /* Se comporta como relative hasta que alcanza el límite definido */
+    top: 0; /* Cuando el elemento llega a 0px desde el top del viewport, "se pega" y pasa a comportarse como fixed */
+}
