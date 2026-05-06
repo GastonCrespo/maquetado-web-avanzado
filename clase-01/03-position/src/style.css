@@ -1,0 +1,44 @@
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    /* Tipografía segura -> Todos los SO van a tener alguna de estás tipografías */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+
+.contenedor {
+    max-width: 900px;
+    border: 1px solid crimson;
+    margin: auto;
+}
+
+.caja-padre {
+    width: 600px;
+    border: 5px solid blue;
+    height: 600px;
+    margin: 40px auto;
+     /* Para que los hijos con position absolute se posicionen respecto a este padre */
+}
+
+.caja {
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+    text-align: center; /* centra horizontalmente el texto */
+    color : white;
+
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
