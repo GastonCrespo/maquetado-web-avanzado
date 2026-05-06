@@ -62,9 +62,18 @@ body {
 /* El elemento que esta con  absolute basicamente se posiciona desde el borde de la pestañaa(viewport) de una forma estatica  */
 /* en este caso el fixed que esta en 4ta posicion toma el lugar del absolutea al moverlo , pasa de 4ta psoicion a 3ra */
 .absolute{
-    position: absolute;
+    position: static;
     background-color: darkmagenta;
-    left: -50px; /* Left Y Right = X */  
+    right: -50px; /* Left Y Right = X */  
     top: -50px; /* Top Y Bottom = Y */  
+    border-radius: 50%;
+}
+
+/* El div con la clase, fixed no se salio del flujo, es como si nunca lo hubiera definido dentro del html */
+/* A diferencia  */
+.fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
     border-radius: 50%;
 }
