@@ -20,22 +20,53 @@ h3{
 
 /* ! EM (em) element */
 /* EM es relativa a su <etiqueta>, <contenedor>, <body> <html> */
-/* ! SIEMPRE BUSCA EL FONR SIZE de la etiqueta, contenedorn body y html o busca el por defecto del navegador */
+/* ! SIEMPRE BUSCA EL FONT SIZE de la etiqueta, contenedorn body y html o busca el por defecto del navegador */
 
 html{
 
 font-size: 100%; /* 16px por defecto del navegador */
 }
 
-/* body{
-  font-size: 10px; /* 0.625 veces el tamaño de su contenedor (html) 
+body{
+  font-size: 16px; /* 0.625 veces el tamaño de su contenedor (html) */
+  
 }
-}
- */
+
+
 
 article.opinion{
-  font-size: 32px;
+  font-size: 2em; /* 1 vez el tamaño de su contenedor (body) */
   border: 2px solid crimson; /* 1.5 veces el tamaño de su contenedor */
-  padding: 16px; /* 0.5 veces el tamaño de su contenedor */
-  margin: 8px 16px 32px 48px; /* 0.25, 0.5, 1, 1.5 veces el tamaño de su contenedor */
+  padding: 1em; /* 1 vez el tamaño de su contenedor */
+  margin: 0.5em 1em 2em 3em; /* 0.25, 0.5, 1, 1.5 veces el tamaño de su contenedor */
+}
+
+h2.titulo{
+  font-size: 2em; /* 2 veces el tamaño de su contenedor (body) */
+}
+
+p.parrafo{
+  font-size: 1rem; /* 1 vez el tamaño del html su referencia siempre es el html, tiene 16px por defecto*/
+  margin: 3rem; /* 3 veces el tamaño del html */
+}
+
+/* IDEAL --> todo con em */
+/* EL MEJOR -> em para font-size */
+/* EL MEJOR -> rem para modelo caja */
+/* EL MEJOR -> tengo tamaño pequeño. Mitad html (16px/2) -> px */
+
+
+
+/* !Porcentaje y Viewport */
+
+.papa{
+  background-color: rgb(98, 79, 204);
+  height: 20px;
+  color: white;
+  width: 100vw; /* 100% del ancho del viewport(rem) es igual al ancho de la ventana */
+}
+
+.hijo{
+  background-color: darkblue;
+  width: 25vw; /* 25% del ancho del viewport */
 }
