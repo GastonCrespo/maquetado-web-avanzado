@@ -1,0 +1,52 @@
+export function ResourcesSection() {
+  return (
+    <section className="px-6 py-24 flex justify-center" id="recursos"> // 🔴 CAMBIO 1
+      <div className="max-w-4xl w-full mx-auto"> // 🔴 CAMBIO 2
+        {/* Section header */}
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+            Recursos descargables
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Guías completas para orientarte en tu carrera profesional
+          </p>
+        </div>
+
+        {/* Resources grid */}
+        <div className="grid sm:grid-cols-2 gap-6 justify-center"> // 🔴 CAMBIO 3
+          {resources.map((resource) => (
+            <Card 
+              key={resource.title} 
+              className="group hover:border-muted-foreground/30 transition-all duration-300 bg-card/50 backdrop-blur-sm relative overflow-hidden"
+            >
+              {/* Badge */}
+              <div className="absolute top-4 right-4">
+                <span className="px-2.5 py-1 rounded-full bg-primary text-primary-foreground text-xs font-medium">
+                  {resource.badge}
+                </span>
+              </div>
+
+              <CardHeader className="pb-2">
+                <div className="p-3 rounded-xl bg-secondary w-fit mb-4">
+                  <resource.icon className="size-6 text-foreground" />
+                </div>
+                <CardTitle className="text-lg font-semibold pr-16">
+                  {resource.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <CardDescription className="text-sm leading-relaxed">
+                  {resource.description}
+                </CardDescription>
+                <Button className="w-full" variant="outline">
+                  <Download className="size-4 mr-2" />
+                  {resource.downloadLabel}
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
